@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Bootprint</title>
+                                                         </head>
+<body>
+<div class="container">
+    <h1>Actions used to quarantine a device</h1>
+    <p class="odxl-info">
+        Version: <span class="odxl-info-version">0.0.1</span>
+    </p>
+    <p><p>Actions used to quarantine a device</p>
+    </p>
+    
+        <h2>Requests</h2>
+        
+            <div id="request--action-quarantine-device-by_hostname" class="opendxl--panel-request panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="name"><strong>/action/quarantine/device/by_hostname</strong></h3>        
+                </div>
+                <div class="panel-body">        
+                    <section class="odxl-request-payload">
+                            <p>Quarantines a device by its hostname</p>
+                    
+                                <div class="row">
+                                    <div class="col-md-12 odxl-request-model">
+                                        <div id="definition-payload" class="panel panel-definition">
+                                                <div class="panel-heading">
+                                                        <h3 class="panel-title"><a name="/definitions/payload"></a>payload:
+                                                            <span class="json-property-type">
+                                        <span class="json-property-type">object</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        
+                                        </span>
+                                                        </h3>
+                                                </div>
+                                            <div class="panel-body">
+                                                        <section class="json-schema-example">
+                                                            <pre><code class="lang-json">{<br>    &quot;<span class="hljs-attribute">target</span>&quot;: <span class="hljs-value">{<br>        &quot;<span class="hljs-attribute">device</span>&quot;: <span class="hljs-value">{<br>            &quot;<span class="hljs-attribute">device_id</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;{cba1fc32-cc02-4f98-b210-35ecad2b5ea1}&quot;</span></span>,<br>            &quot;<span class="hljs-attribute">hostname</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;testdevice.local.com&quot;</span><br>        </span>}<br>    </span>}<br></span>}
+                                                    </code></pre>
+                                                    
+                                                        </section>
+                                                    
+                                                        <section class="json-schema-properties">
+                                                            <dl>
+                                                                    <dt data-property-name="target">
+                                                                        <span class="json-property-name">target:</span>
+                                                                        
+                                                                        <span class="json-property-type">object</span>
+                                                                        <span class="json-property-range" title="Value limits"></span>
+                                                                        
+                                                                    </dt>
+                                                                    <dd>
+                                                                        
+                                                                        <div class="json-inner-schema">
+                                                                            
+                                                                                <section class="json-schema-properties">
+                                                                                    <dl>
+                                                                                            <dt data-property-name="device">
+                                                                                                <span class="json-property-name">device:</span>
+                                                                                                
+                                                                                                <span class="json-property-type">object</span>
+                                                                                                <span class="json-property-range" title="Value limits"></span>
+                                                                                                
+                                                                                            </dt>
+                                                                                            <dd>
+                                                                                                <p>A &#39;Device&#39; Target MUST contain at least one property.</p>
+                                                                                
+                                                                                                <div class="json-inner-schema">
+                                                                                                    
+                                                                                                        <section class="json-schema-properties">
+                                                                                                            <dl>
+                                                                                                                    <dt data-property-name="hostname">
+                                                                                                                        <span class="json-property-name">hostname:</span>
+                                                                                                                        
+                                                                                                                        <span class="json-property-type">string</span>
+                                                                                                                        <span class="json-property-range" title="Value limits"></span>
+                                                                                                                        
+                                                                                                                    </dt>
+                                                                                                                    <dd>
+                                                                                                                        <p>A hostname that can be used to connect to this device over a network</p>
+                                                                                                        
+                                                                                                                        <div class="json-inner-schema">
+                                                                                                                            
+                                                                                                                        </div>
+                                                                                                                    </dd>
+                                                                                                                    <dt data-property-name="idn_hostname">
+                                                                                                                        <span class="json-property-name">idn_hostname:</span>
+                                                                                                                        
+                                                                                                                        <span class="json-property-type">string</span>
+                                                                                                                        <span class="json-property-range" title="Value limits"></span>
+                                                                                                                        
+                                                                                                                    </dt>
+                                                                                                                    <dd>
+                                                                                                                        <p>An internationalized hostname that can be used to connect to this device over a network</p>
+                                                                                                        
+                                                                                                                        <div class="json-inner-schema">
+                                                                                                                            
+                                                                                                                        </div>
+                                                                                                                    </dd>
+                                                                                                                    <dt data-property-name="device_id">
+                                                                                                                        <span class="json-property-name">device_id:</span>
+                                                                                                                        
+                                                                                                                        <span class="json-property-type">string</span>
+                                                                                                                        <span class="json-property-range" title="Value limits"></span>
+                                                                                                                        
+                                                                                                                    </dt>
+                                                                                                                    <dd>
+                                                                                                                        <p>An identifier that refers to this device within an inventory or management system</p>
+                                                                                                        
+                                                                                                                        <div class="json-inner-schema">
+                                                                                                                            
+                                                                                                                        </div>
+                                                                                                                    </dd>
+                                                                                                            </dl>
+                                                                                                        </section>
+                                                                                                </div>
+                                                                                            </dd>
+                                                                                    </dl>
+                                                                                </section>
+                                                                        </div>
+                                                                    </dd>
+                                                            </dl>
+                                                        </section>
+                                            </div>
+                                        </div>        </div>
+                                </div>                    
+                    </section>
+                            
+                    
+                        <section class="odxl-response-payload">
+                                    <div class="row">
+                                        <div class="col-md-12 odxl-request-model">
+                                            <div id="definition-payload" class="panel panel-definition">
+                                                    <div class="panel-heading">
+                                                            <h3 class="panel-title"><a name="/definitions/payload"></a>payload:
+                                                                <span class="json-property-type">
+                                            <span class="json-property-type">object</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                            
+                                            </span>
+                                                            </h3>
+                                                    </div>
+                                                <div class="panel-body">
+                                                            <section class="json-schema-example">
+                                                                <pre><code class="lang-json">{<br>    &quot;<span class="hljs-attribute">status</span>&quot;: <span class="hljs-value"><span class="hljs-number">200</span><br></span>}
+                                                        </code></pre>
+                                                        
+                                                            </section>
+                                                        
+                                                            <section class="json-schema-properties">
+                                                                <dl>
+                                                                        <dt data-property-name="status">
+                                                                            <span class="json-property-name">status:</span>
+                                                                            
+                                                                            <span class="json-property-type">integer</span>    <span class="json-property-enum" title="Possible values">, x &isin; {
+                                                                                            <span class="json-property-enum-item">102</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">200</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">400</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">401</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">403</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">404</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">500</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">501</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">503</span>
+                                                                                        
+                                                                                    }
+                                                                                    </span>
+                                                                            <span class="json-property-range" title="Value limits"></span>
+                                                                            
+                                                                        </dt>
+                                                                        <dd>
+                                                                            
+                                                                            <div class="json-inner-schema">
+                                                                                
+                                                                            </div>
+                                                                        </dd>
+                                                                </dl>
+                                                            </section>
+                                                </div>
+                                            </div>        </div>
+                                    </div>                    
+                        </section>
+                                
+                        
+                </div>
+            </div>
+            <div id="request--action-quarantine-device-by_mac_address" class="opendxl--panel-request panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="name"><strong>/action/quarantine/device/by_mac_address</strong></h3>        
+                </div>
+                <div class="panel-body">        
+                    <section class="odxl-request-payload">
+                            <p>Quarantines a device by its MAC address</p>
+                    
+                                <div class="row">
+                                    <div class="col-md-12 odxl-request-model">
+                                        <div id="definition-payload" class="panel panel-definition">
+                                                <div class="panel-heading">
+                                                        <h3 class="panel-title"><a name="/definitions/payload"></a>payload:
+                                                            <span class="json-property-type">
+                                        <span class="json-property-type">object</span>
+                                        <span class="json-property-range" title="Value limits"></span>
+                                        
+                                        </span>
+                                                        </h3>
+                                                </div>
+                                            <div class="panel-body">
+                                                        <section class="json-schema-example">
+                                                            <pre><code class="lang-json">{<br>    &quot;<span class="hljs-attribute">target</span>&quot;: <span class="hljs-value">{<br>        &quot;<span class="hljs-attribute">mac_addr</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;B8:CA:3A:77:A5:AE&quot;</span><br>    </span>}<br></span>}
+                                                    </code></pre>
+                                                    
+                                                        </section>
+                                                    
+                                                        <section class="json-schema-properties">
+                                                            <dl>
+                                                                    <dt data-property-name="target">
+                                                                        <span class="json-property-name">target:</span>
+                                                                        
+                                                                        <span class="json-property-type">object</span>
+                                                                        <span class="json-property-range" title="Value limits"></span>
+                                                                        
+                                                                    </dt>
+                                                                    <dd>
+                                                                        
+                                                                        <div class="json-inner-schema">
+                                                                            
+                                                                                <section class="json-schema-properties">
+                                                                                    <dl>
+                                                                                            <dt data-property-name="mac_addr">
+                                                                                                <span class="json-property-name">mac_addr:</span>
+                                                                                                
+                                                                                                <span class="json-property-type">string</span>
+                                                                                                <span class="json-property-range" title="Value limits"></span>
+                                                                                                
+                                                                                            </dt>
+                                                                                            <dd>
+                                                                                                <p>A Media Access Control (MAC) address - EUI-48 or EUI-64 as defined in [EUI]</p>
+                                                                                
+                                                                                                <div class="json-inner-schema">
+                                                                                                    
+                                                                                                </div>
+                                                                                            </dd>
+                                                                                    </dl>
+                                                                                </section>
+                                                                        </div>
+                                                                    </dd>
+                                                            </dl>
+                                                        </section>
+                                            </div>
+                                        </div>        </div>
+                                </div>                    
+                    </section>
+                            
+                    
+                        <section class="odxl-response-payload">
+                                    <div class="row">
+                                        <div class="col-md-12 odxl-request-model">
+                                            <div id="definition-payload" class="panel panel-definition">
+                                                    <div class="panel-heading">
+                                                            <h3 class="panel-title"><a name="/definitions/payload"></a>payload:
+                                                                <span class="json-property-type">
+                                            <span class="json-property-type">object</span>
+                                            <span class="json-property-range" title="Value limits"></span>
+                                            
+                                            </span>
+                                                            </h3>
+                                                    </div>
+                                                <div class="panel-body">
+                                                            <section class="json-schema-example">
+                                                                <pre><code class="lang-json">{<br>    &quot;<span class="hljs-attribute">status</span>&quot;: <span class="hljs-value"><span class="hljs-number">200</span><br></span>}
+                                                        </code></pre>
+                                                        
+                                                            </section>
+                                                        
+                                                            <section class="json-schema-properties">
+                                                                <dl>
+                                                                        <dt data-property-name="status">
+                                                                            <span class="json-property-name">status:</span>
+                                                                            
+                                                                            <span class="json-property-type">integer</span>    <span class="json-property-enum" title="Possible values">, x &isin; {
+                                                                                            <span class="json-property-enum-item">102</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">200</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">400</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">401</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">403</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">404</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">500</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">501</span>
+                                                                                        ,
+                                                                                            <span class="json-property-enum-item">503</span>
+                                                                                        
+                                                                                    }
+                                                                                    </span>
+                                                                            <span class="json-property-range" title="Value limits"></span>
+                                                                            
+                                                                        </dt>
+                                                                        <dd>
+                                                                            
+                                                                            <div class="json-inner-schema">
+                                                                                
+                                                                            </div>
+                                                                        </dd>
+                                                                </dl>
+                                                            </section>
+                                                </div>
+                                            </div>        </div>
+                                    </div>                    
+                        </section>
+                                
+                        
+                </div>
+            </div>
+    
+</div>
+<script src="bundle.js" type="application/javascript"></script>
+</body>
+</html>
