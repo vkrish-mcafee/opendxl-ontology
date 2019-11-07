@@ -1,4 +1,4 @@
-#OpenDXL Ontology
+# OpenDXL Ontology
 
 ## Actions
 * [Quarantine Device](actions/quarantine_device_action) ([Specification](https://github.com/opendxl/opendxl-ontology/blob/master/actions/quarantine_device_action.json))
