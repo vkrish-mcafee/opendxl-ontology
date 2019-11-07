@@ -1,2 +1,2 @@
 # Actions
-* (Quarantine Device)[actions/quarantine_device_action]
+* [Quarantine Device](actions/quarantine_device_action)
